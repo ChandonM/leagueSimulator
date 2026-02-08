@@ -1,7 +1,7 @@
 import random
 
 A_wins = 0
-A_draws = 0
+A_ties = 0
 A_losses = 0
 
 for i in range(1000000):
@@ -25,10 +25,11 @@ for i in range(1000000):
     if A_total > C_total:
         A_wins += 1
     elif A_total == C_total:
-        A_draws += 1
+        A_ties += 1
     else:
         A_losses += 1
 
 print("Arsenal wins: " + str(A_wins))
-print("Arsenal draws: " + str(A_draws))
+print("Arsenal ties: " + str(A_ties))
 print("Arsenal losses: " + str(A_losses))
+
